@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<head>
+<meta charset="UTF-8">
+	<title>명우니닷컴 :: 명크 박스 만들기</title>
+	<!-- bootstrap css -->
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<!-- jquery js -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<!-- bootstrap js -->
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<!-- 링크 복붙 시 로드할 이미지 -->
+	<img src="./myeongkBox_v1.0.jpg" style="display: none"/>
+
+	<!-- Container -->
+	<div style="position:absolute; width:702px; left:50%; margin-left:-351px;">
+		<!-- DEFAULT MYEONGKBOX TITLE -->
+		<div class="text-center">
+			<h2>
+				<div class="text-center">
+					<label class="control-label"><span class="glyphicon glyphicon-music"></span>  명크 박스 만들기</label>
+				</div>
+			</h2>
+			<br/>
+			<hr/>
+			<br/>
+		</div><!-- //DEFAULT MYEONGKBOX TITLE -->
+		
+		<!-- DEFAULT MYEONGKBOX CONTENT -->
+		<div class="text-center" width="702" height="396" style="border:1px solid black">
+			
+			<!-- AUDIO 객체 생성 -->
+			<div class="text-center">
+				<br/>
+				<audio id="audio1" controls></audio><br/>
+				<audio id="audio2" controls></audio><br/>
+				<audio id="audio3" controls></audio><br/>
+				<audio id="audio4" controls></audio><br/>
+				<audio id="audio5" controls></audio><br/>
+				<audio id="audio6" controls></audio><br/>
+				<audio id="audio7" controls></audio><br/>
+				<audio id="audio8" controls></audio><br/>
+				<audio id="audio9" controls></audio><br/>
+				<audio id="audio10" controls></audio><br/>
+				<audio id="audio11" controls></audio><br/>
+				<audio id="audio12" controls></audio><br/>
+				<audio id="audio13" controls></audio><br/>
+				<audio id="audio14" controls></audio><br/>
+				<audio id="audio15" controls></audio><br/>
+				<audio id="audio16" controls></audio><br/>
+				<audio id="audio17" controls></audio><br/>
+				<audio id="audio18" controls></audio><br/>
+				<audio id="audio19" controls></audio><br/>
+				<audio id="audio20" controls></audio><br/>
+				<br/><br/>
+			</div><!-- //AUDIO 객체 생성 -->
+
+			<!-- 각 AUDIO 객체 토글 버튼 -->
+			<div class="text-center">
+				<a onclick="togglePlay('1');">
+					<button type="button" class="btn btn-outline-primary btn-sm">
+						<span class="glyphicon glyphicon-music"></span> drum_ballet
+					</button>
+				</a>
+				<a onclick="togglePlay('2');">
+					<button type="button" class="btn btn-outline-success btn-sm">
+						<span class="glyphicon glyphicon-music"></span> drum_charley
+					</button>
+				</a>
+				<a onclick="togglePlay('3');">
+					<button type="button" class="btn btn-outline-danger btn-sm">
+						<span class="glyphicon glyphicon-music"></span> drum_kick
+					</button>
+				</a>
+				<a onclick="togglePlay('4');">
+					<button type="button" class="btn btn-outline-danger btn-sm">
+						<span class="glyphicon glyphicon-music"></span> drum_lead
+					</button>
+				</a>
+				<a onclick="togglePlay('5');">
+					<button type="button" class="btn btn-outline-danger btn-sm">
+						<span class="glyphicon glyphicon-music"></span> drum_snare
+					</button>
+				</a>
+				<br/><br/>
+				<a onclick="togglePlay('6');">
+					<button type="button" class="btn btn-outline-danger btn-sm">
+						<span class="glyphicon glyphicon-music"></span> effet_daft1
+					</button>
+				</a>
+				<a onclick="togglePlay('7');">
+					<button type="button" class="btn btn-outline-danger btn-sm">
+						<span class="glyphicon glyphicon-music"></span> effet_daft2
+					</button>
+				</a>
+				<a onclick="togglePlay('8');">
+					<button type="button" class="btn btn-outline-danger btn-sm">
+						<span class="glyphicon glyphicon-music"></span> effet_long
+					</button>
+				</a>
+				<a onclick="togglePlay('9');">
+					<button type="button" class="btn btn-outline-danger btn-sm">
+						<span class="glyphicon glyphicon-music"></span> effet_rythme
+					</button>
+				</a>
+				<a onclick="togglePlay('10');">
+					<button type="button" class="btn btn-outline-danger btn-sm">
+						<span class="glyphicon glyphicon-music"></span> effet_tududu
+					</button>
+				</a>
+				<br/><br/>
+				<a onclick="togglePlay('11');">
+					<button type="button" class="btn btn-outline-primary btn-sm">
+						<span class="glyphicon glyphicon-music"></span> melo_armo
+					</button>
+				</a>
+				<a onclick="togglePlay('12');">
+					<button type="button" class="btn btn-outline-success btn-sm">
+						<span class="glyphicon glyphicon-music"></span> melo_clav
+					</button>
+				</a>
+				<a onclick="togglePlay('13');">
+					<button type="button" class="btn btn-outline-danger btn-sm">
+						<span class="glyphicon glyphicon-music"></span> melo_indien
+					</button>
+				</a>
+				<a onclick="togglePlay('14');">
+					<button type="button" class="btn btn-outline-danger btn-sm">
+						<span class="glyphicon glyphicon-music"></span> melo_siffle
+					</button>
+				</a>
+				<a onclick="togglePlay('15');">
+					<button type="button" class="btn btn-outline-danger btn-sm">
+						<span class="glyphicon glyphicon-music"></span> melo_tuu
+					</button>
+				</a>
+				<br/><br/>
+				<a onclick="togglePlay('16');">
+					<button type="button" class="btn btn-outline-danger btn-sm">
+						<span class="glyphicon glyphicon-music"></span> voix_colors
+					</button>
+				</a>
+				<a onclick="togglePlay('17');">
+					<button type="button" class="btn btn-outline-danger btn-sm">
+						<span class="glyphicon glyphicon-music"></span> voix_over
+					</button>
+				</a>
+				<a onclick="togglePlay('18');">
+					<button type="button" class="btn btn-outline-danger btn-sm">
+						<span class="glyphicon glyphicon-music"></span> voix_ride
+					</button>
+				</a>
+				<a onclick="togglePlay('19');">
+					<button type="button" class="btn btn-outline-danger btn-sm">
+						<span class="glyphicon glyphicon-music"></span> voix_sunrise
+					</button>
+				</a>
+				<a onclick="togglePlay('20');">
+					<button type="button" class="btn btn-outline-danger btn-sm">
+						<span class="glyphicon glyphicon-music"></span> voix_waya
+					</button>
+				</a>
+				<br/>
+				<br/>
+			</div><!-- //각 AUDIO 객체 토글 버튼 -->
+
+		</div><!-- //DEFAULT MYEONGKBOX CONTENT -->
+		<br/>
+
+	</div><!-- //Container -->
+
+
+	<!-- 스크립트 -->
+	<script>
+
+	/** 오디오 객체 배열로 선언 **/
+	var audioElm = new Array(20);
+
+
+	/* 오디어 객체 값을 설정할 loop : 요소, loop 속성 */
+	for (var i = 0; i < 20; i++) {
+		/* 오디오 배열 객체에 각 요소 설정 */
+		audioElm[i] = document.getElementById('audio' + (i + 1));
+
+		/* 
+		 * 오디오 배열 객체에 각 파일 속성 설정 
+		 * [1~5]	: drum	[ballet, charley, kick, lead, snare]
+		 * [5~10]	: effet	[daft1, daft2, long, rythme, tududu]
+		 * [10~15]	: melo	[armo, clav, indien, siffle, tuu]
+		 * [15~20]	: voix	[colors, over, ride, sunrise, waya]
+		 */
+		audioElm[i].src = './audio/all/' + (i + 1) + '.mp3';
+
+		/* 오디오 배열 객체에 각 loop 속성 설정 */
+		audioElm[i].loop = 'loop';
+	}
+
+
+	/** 오디오 재생 토글 함수 **/
+	function togglePlay(audioElm_Number) {
+		/* 조건문 : 매개변수로 전달 된 해당 오디오 객체가 재생정지중이라면 → true, 재생중이라면 → false */ 
+		if (audioElm[audioElm_Number].paused == true) {
+			/* 해당 오디오 객체 재생 함수 호출 */
+			playAudio(audioElm[audioElm_Number]);
+		} else {
+			/* 해당 오디오 객체 재생정지 함수 호출 */
+			pauseAudio(audioElm[audioElm_Number]);
+		}
+	}
+
+	/** 오디오 재생 함수 **/
+	function playAudio(audioElm) {
+		/* 오디오 재생 */
+		audioElm.play();
+	}
+
+	/** 오디오 재생정지 함수 **/
+	function pauseAudio(audioElm) {
+		/* 오디오 재생정지 */
+		audioElm.pause();
+	}
+
+	</script><!-- //스크립트 -->
+
+</body>
+</html>
