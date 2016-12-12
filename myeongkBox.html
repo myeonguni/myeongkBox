@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <head>
 <meta charset="UTF-8">
+	<!-- 링크에 표시될 이미지 -->
+	<link rel="image_src" href="./myeongkBox_v1.0.jpg"/>
+	<!-- META TAG 정의 -->
+	<meta name="title" content="myeongkBox"/>
+	<meta name="author" content="myeonguni.com"/>
+	<meta name="keyword" content="myeongkBox"/>
+	<meta name="description" content="HTML AUDIO 객체를 이용한 비트 제작 웹앱"/>
+	<meta name="publisher" content="http://myeonguni.com"/>
+	<meta name="replay-to(Email)" content="aparecium117@gmail.com"/>
+	<!-- 페이지 제목 -->
 	<title>명우니닷컴 :: 명크 박스 만들기</title>
 	<!-- bootstrap css -->
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
@@ -8,13 +18,103 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 	<!-- bootstrap js -->
 	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<style>
+		.audio-toggle-ico {
+			display: inline-block;
+			width: 37px;
+			height: 37px;
+			background: url(./img/img_audio_toggle_list_37.PNG);
+		}
+
+		.audio-toggle-ico:hover {
+			opacity: .30;
+			filter: alpha(opacity = 30);
+		}
+
+		.ico1 {
+			background-position: -1px 0px;
+		}
+
+		.ico2 {
+			background-position: -39px 0px;
+		}
+
+		.ico3 {
+			background-position: -77px 0px;
+		}
+
+		.ico4 {
+			background-position: -115px 0px;
+		}
+
+		.ico5 {
+			background-position: -153px 0px;
+		}
+
+		.ico6 {
+			background-position: -191px 0px;
+		}
+
+		.ico7 {
+			background-position: -231px 0px;
+		}
+
+		.ico8 {
+			background-position: -269px 0px;
+		}
+
+		.ico9 {
+			background-position: -308px 0px;
+		}
+
+		.ico10 {
+			background-position: -346px 0px;
+		}
+
+		.ico11 {
+			background-position: -384px 0px;
+		}
+
+		.ico12 {
+			background-position: -423px 0px;
+		}
+
+		.ico13 {
+			background-position: -461px 0px;
+		}
+
+		.ico14 {
+			background-position: -499px 0px;
+		}
+
+		.ico15 {
+			background-position: -538px 0px;
+		}
+
+		.ico16 {
+			background-position: -576px 0px;
+		}
+
+		.ico17 {
+			background-position: -614px 0px;
+		}
+
+		.ico18 {
+			background-position: -653px 0px;
+		}
+
+		.ico19 {
+			background-position: -691px 0px;
+		}
+
+		.ico20 {
+			background-position: -730px 0px;
+		}
+	</style>
 </head>
 <body>
-	<!-- 링크 복붙 시 로드할 이미지 -->
-	<img src="./myeongkBox_v1.0.jpg" style="display: none"/>
-
-	<!-- Container -->
-	<div style="position:absolute; width:702px; left:50%; margin-left:-351px;">
+	<!-- HEADER -->
+	<header>
 		<!-- DEFAULT MYEONGKBOX TITLE -->
 		<div class="text-center">
 			<h2>
@@ -22,153 +122,109 @@
 					<label class="control-label"><span class="glyphicon glyphicon-music"></span>  명크 박스 만들기</label>
 				</div>
 			</h2>
-			<br/>
-			<hr/>
-			<br/>
-		</div><!-- //DEFAULT MYEONGKBOX TITLE -->
-		
-		<!-- DEFAULT MYEONGKBOX CONTENT -->
-		<div class="text-center" width="702" height="396" style="border:1px solid black">
-			
-			<!-- AUDIO 객체 생성 -->
-			<div class="text-center">
-				<br/>
-				<audio id="audio1" controls></audio><br/>
-				<audio id="audio2" controls></audio><br/>
-				<audio id="audio3" controls></audio><br/>
-				<audio id="audio4" controls></audio><br/>
-				<audio id="audio5" controls></audio><br/>
-				<audio id="audio6" controls></audio><br/>
-				<audio id="audio7" controls></audio><br/>
-				<audio id="audio8" controls></audio><br/>
-				<audio id="audio9" controls></audio><br/>
-				<audio id="audio10" controls></audio><br/>
-				<audio id="audio11" controls></audio><br/>
-				<audio id="audio12" controls></audio><br/>
-				<audio id="audio13" controls></audio><br/>
-				<audio id="audio14" controls></audio><br/>
-				<audio id="audio15" controls></audio><br/>
-				<audio id="audio16" controls></audio><br/>
-				<audio id="audio17" controls></audio><br/>
-				<audio id="audio18" controls></audio><br/>
-				<audio id="audio19" controls></audio><br/>
-				<audio id="audio20" controls></audio><br/>
-				<br/><br/>
-			</div><!-- //AUDIO 객체 생성 -->
-
-			<!-- 각 AUDIO 객체 토글 버튼 -->
-			<div class="text-center">
-				<a onclick="togglePlay('1');">
-					<button type="button" class="btn btn-outline-primary btn-sm">
-						<span class="glyphicon glyphicon-music"></span> drum_ballet
-					</button>
-				</a>
-				<a onclick="togglePlay('2');">
-					<button type="button" class="btn btn-outline-success btn-sm">
-						<span class="glyphicon glyphicon-music"></span> drum_charley
-					</button>
-				</a>
-				<a onclick="togglePlay('3');">
-					<button type="button" class="btn btn-outline-danger btn-sm">
-						<span class="glyphicon glyphicon-music"></span> drum_kick
-					</button>
-				</a>
-				<a onclick="togglePlay('4');">
-					<button type="button" class="btn btn-outline-danger btn-sm">
-						<span class="glyphicon glyphicon-music"></span> drum_lead
-					</button>
-				</a>
-				<a onclick="togglePlay('5');">
-					<button type="button" class="btn btn-outline-danger btn-sm">
-						<span class="glyphicon glyphicon-music"></span> drum_snare
-					</button>
-				</a>
-				<br/><br/>
-				<a onclick="togglePlay('6');">
-					<button type="button" class="btn btn-outline-danger btn-sm">
-						<span class="glyphicon glyphicon-music"></span> effet_daft1
-					</button>
-				</a>
-				<a onclick="togglePlay('7');">
-					<button type="button" class="btn btn-outline-danger btn-sm">
-						<span class="glyphicon glyphicon-music"></span> effet_daft2
-					</button>
-				</a>
-				<a onclick="togglePlay('8');">
-					<button type="button" class="btn btn-outline-danger btn-sm">
-						<span class="glyphicon glyphicon-music"></span> effet_long
-					</button>
-				</a>
-				<a onclick="togglePlay('9');">
-					<button type="button" class="btn btn-outline-danger btn-sm">
-						<span class="glyphicon glyphicon-music"></span> effet_rythme
-					</button>
-				</a>
-				<a onclick="togglePlay('10');">
-					<button type="button" class="btn btn-outline-danger btn-sm">
-						<span class="glyphicon glyphicon-music"></span> effet_tududu
-					</button>
-				</a>
-				<br/><br/>
-				<a onclick="togglePlay('11');">
-					<button type="button" class="btn btn-outline-primary btn-sm">
-						<span class="glyphicon glyphicon-music"></span> melo_armo
-					</button>
-				</a>
-				<a onclick="togglePlay('12');">
-					<button type="button" class="btn btn-outline-success btn-sm">
-						<span class="glyphicon glyphicon-music"></span> melo_clav
-					</button>
-				</a>
-				<a onclick="togglePlay('13');">
-					<button type="button" class="btn btn-outline-danger btn-sm">
-						<span class="glyphicon glyphicon-music"></span> melo_indien
-					</button>
-				</a>
-				<a onclick="togglePlay('14');">
-					<button type="button" class="btn btn-outline-danger btn-sm">
-						<span class="glyphicon glyphicon-music"></span> melo_siffle
-					</button>
-				</a>
-				<a onclick="togglePlay('15');">
-					<button type="button" class="btn btn-outline-danger btn-sm">
-						<span class="glyphicon glyphicon-music"></span> melo_tuu
-					</button>
-				</a>
-				<br/><br/>
-				<a onclick="togglePlay('16');">
-					<button type="button" class="btn btn-outline-danger btn-sm">
-						<span class="glyphicon glyphicon-music"></span> voix_colors
-					</button>
-				</a>
-				<a onclick="togglePlay('17');">
-					<button type="button" class="btn btn-outline-danger btn-sm">
-						<span class="glyphicon glyphicon-music"></span> voix_over
-					</button>
-				</a>
-				<a onclick="togglePlay('18');">
-					<button type="button" class="btn btn-outline-danger btn-sm">
-						<span class="glyphicon glyphicon-music"></span> voix_ride
-					</button>
-				</a>
-				<a onclick="togglePlay('19');">
-					<button type="button" class="btn btn-outline-danger btn-sm">
-						<span class="glyphicon glyphicon-music"></span> voix_sunrise
-					</button>
-				</a>
-				<a onclick="togglePlay('20');">
-					<button type="button" class="btn btn-outline-danger btn-sm">
-						<span class="glyphicon glyphicon-music"></span> voix_waya
-					</button>
-				</a>
-				<br/>
-				<br/>
-			</div><!-- //각 AUDIO 객체 토글 버튼 -->
-
 		</div><!-- //DEFAULT MYEONGKBOX CONTENT -->
-		<br/>
+	</header><!-- //HEADER -->
 
-	</div><!-- //Container -->
+
+	<!-- CONTENT -->
+	<div style="position:absolute; width:1000px; left:50%; margin-left:-500px;">
+		<!-- 줄바꿈, 줄, 줄바꿈 삽입 -->
+		<br/><hr/><br/>
+
+		<!-- DEFAULT MYEONGKBOX CONTENT -->
+		<div>
+			<div style="height:400px; border:1px solid black; margin: 0 50px;">
+				<!-- AUDIO 객체 요소 생성 : 화면에 디스플레이 하지 않음  -->
+				<div style="display: none;">
+					<audio id="audio0" controls></audio><br/>
+					<audio id="audio1" controls></audio><br/>
+					<audio id="audio2" controls></audio><br/>
+					<audio id="audio3" controls></audio><br/>
+					<audio id="audio4" controls></audio><br/>
+					<audio id="audio5" controls></audio><br/>
+					<audio id="audio6" controls></audio><br/>
+					<audio id="audio7" controls></audio><br/>
+					<audio id="audio8" controls></audio><br/>
+					<audio id="audio9" controls></audio><br/>
+					<audio id="audio10" controls></audio><br/>
+					<audio id="audio11" controls></audio><br/>
+					<audio id="audio12" controls></audio><br/>
+					<audio id="audio13" controls></audio><br/>
+					<audio id="audio14" controls></audio><br/>
+					<audio id="audio15" controls></audio><br/>
+					<audio id="audio16" controls></audio><br/>
+					<audio id="audio17" controls></audio><br/>
+					<audio id="audio18" controls></audio><br/>
+					<audio id="audio19" controls></audio><br/>
+				</div><!-- //AUDIO 객체 생성 : 화면에 디스플레이 하지 않음 -->
+			</div>
+		</div><!-- //DEFAULT MYEONGKBOX CONTENT -->
+
+		<!-- 각 태그 별 AUDIO 객체 토글 버튼 -->
+		<div class="text-center">
+			<br/><br/>
+			<div class="row" style="margin: 0 50px;">
+				<div class="col-sm-3" style="padding: 0 10px;">
+					<a class="audio-toggle-ico ico1" onclick="togglePlay('0', this);" draggable="true"></a>
+					<a class="audio-toggle-ico ico2" onclick="togglePlay('1', this);" draggable="true"></a>
+					<a class="audio-toggle-ico ico3" onclick="togglePlay('2', this);"></a>
+					<a class="audio-toggle-ico ico4" onclick="togglePlay('3', this);"></a>
+					<a class="audio-toggle-ico ico5" onclick="togglePlay('4', this);"></a>
+					<!-- 줄 삽입 -->
+					<hr style="margin: 5px 0px;"/>
+					BEATS
+				</div>
+				<div class="col-sm-3" style="padding: 0 10px;">
+					<a class="audio-toggle-ico ico6" onclick="togglePlay('5', this);"></a>
+					<a class="audio-toggle-ico ico7" onclick="togglePlay('6', this);"></a>
+					<a class="audio-toggle-ico ico8" onclick="togglePlay('7', this);"></a>
+					<a class="audio-toggle-ico ico9" onclick="togglePlay('8', this);"></a>
+					<a class="audio-toggle-ico ico10" onclick="togglePlay('9', this);"></a>
+					<!-- 줄 삽입 -->
+					<hr style="margin: 5px 0px;"/>
+					EFFECTS
+				</div>
+				<div class="col-sm-3" style="padding: 0 10px;">
+					<a class="audio-toggle-ico ico11" onclick="togglePlay('10', this);"></a>
+					<a class="audio-toggle-ico ico12" onclick="togglePlay('11', this);"></a>
+					<a class="audio-toggle-ico ico13" onclick="togglePlay('12', this);"></a>
+					<a class="audio-toggle-ico ico14" onclick="togglePlay('13', this);"></a>
+					<a class="audio-toggle-ico ico15" onclick="togglePlay('14', this);"></a>
+					<!-- 줄 삽입 -->
+					<hr style="margin: 5px 0px;"/>
+					MELODIES
+				</div>
+				<div class="col-sm-3" style="padding: 0 10px;">
+					<a class="audio-toggle-ico ico16" onclick="togglePlay('15', this);"></a>
+					<a class="audio-toggle-ico ico17" onclick="togglePlay('16', this);"></a>
+					<a class="audio-toggle-ico ico18" onclick="togglePlay('17', this);"></a>
+					<a class="audio-toggle-ico ico19" onclick="togglePlay('18', this);"></a>
+					<a class="audio-toggle-ico ico20" onclick="togglePlay('19', this);"></a>
+					<!-- 줄 삽입 -->
+					<hr style="margin: 5px 0px;"/>
+					VOICES
+				</div>
+			</div>
+
+			<!-- <a onclick="togglePlay('20');">
+				<button type="button" class="btn btn-outline-danger btn-sm">
+					<span class="glyphicon glyphicon-music"></span> voix_waya
+				</button>
+			</a> -->
+			<br/><br/><br/>
+		</div><!-- //각 AUDIO 객체 토글 버튼 -->
+	</div><!-- //CONTENT -->
+
+	<!-- FOOTER -->
+	<footer>
+		<!-- 저작권 표시 페이지 하단 고정 -->
+	    <div class="navbar-fixed-bottom">
+	        <div class="text-center" style="margin-bottom: 10px;">
+	        	copyright ⓒ 2016 <a href="http://myeonguni.com" target="_blank">myeonguni.com</a> All Rights Reserved
+	        </div>
+	    </div><!-- //저작권 표시 페이지 하단 고정 -->
+	</footer><!-- //FOOTER -->
+
 
 
 	<!-- 스크립트 -->
@@ -181,7 +237,7 @@
 	/* 오디어 객체 값을 설정할 loop : 요소, loop 속성 */
 	for (var i = 0; i < 20; i++) {
 		/* 오디오 배열 객체에 각 요소 설정 */
-		audioElm[i] = document.getElementById('audio' + (i + 1));
+		audioElm[i] = document.getElementById('audio' + (i));
 
 		/* 
 		 * 오디오 배열 객체에 각 파일 속성 설정 
@@ -198,14 +254,20 @@
 
 
 	/** 오디오 재생 토글 함수 **/
-	function togglePlay(audioElm_Number) {
+	function togglePlay(audioElm_Number,ico_toggle) {
 		/* 조건문 : 매개변수로 전달 된 해당 오디오 객체가 재생정지중이라면 → true, 재생중이라면 → false */ 
 		if (audioElm[audioElm_Number].paused == true) {
 			/* 해당 오디오 객체 재생 함수 호출 */
 			playAudio(audioElm[audioElm_Number]);
+			/* 해당 오디오 아이콘 요소 토글 재생 스타일 설정 */
+			ico_toggle.style.opacity = ".30";
+			ico_toggle.style.filter = "alpha(opacity = 30)";
 		} else {
 			/* 해당 오디오 객체 재생정지 함수 호출 */
 			pauseAudio(audioElm[audioElm_Number]);
+			/* 해당 오디오 아이콘 요소 토글 재생정지 스타일 설정 */
+			ico_toggle.style.opacity = "1";
+			ico_toggle.style.filter = "alpha(opacity = 100)";
 		}
 	}
 
