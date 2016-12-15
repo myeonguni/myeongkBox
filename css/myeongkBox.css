@@ -1,0 +1,92 @@
+/* myeongkBox css */
+.audio-toggle-ico {
+	display: inline-block;
+	width: 37px;
+	height: 37px;
+	background: url(./img/img_audio_toggle_list_37.PNG);
+}
+
+.audio-toggle-ico:hover {
+	opacity: .30;
+	filter: alpha(opacity = 30);
+}
+
+.ico1 {
+	background-position: -1px 0px;
+}
+
+.ico2 {
+	background-position: -39px 0px;
+}
+
+.ico3 {
+	background-position: -77px 0px;
+}
+
+.ico4 {
+	background-position: -115px 0px;
+}
+
+.ico5 {
+	background-position: -153px 0px;
+}
+
+.ico6 {
+	background-position: -191px 0px;
+}
+
+.ico7 {
+	background-position: -231px 0px;
+}
+
+.ico8 {
+	background-position: -269px 0px;
+}
+
+.ico9 {
+	background-position: -308px 0px;
+}
+
+.ico10 {
+	background-position: -346px 0px;
+}
+
+.ico11 {
+	background-position: -384px 0px;
+}
+
+.ico12 {
+	background-position: -423px 0px;
+}
+
+.ico13 {
+	background-position: -461px 0px;
+}
+
+.ico14 {
+	background-position: -499px 0px;
+}
+
+.ico15 {
+	background-position: -538px 0px;
+}
+
+.ico16 {
+	background-position: -576px 0px;
+}
+
+.ico17 {
+	background-position: -614px 0px;
+}
+
+.ico18 {
+	background-position: -653px 0px;
+}
+
+.ico19 {
+	background-position: -691px 0px;
+}
+
+.ico20 {
+	background-position: -730px 0px;
+}
